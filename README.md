@@ -57,6 +57,13 @@ controller with comments removed is offered. The structure is, roughly:
 				"12345678901234567890123456789012"
 			],
 			"buttons": {
+				// key is SDL name
+				"a": {
+					// all values are as defined in symbols
+					"type": "A",
+					"bg": "white",
+					"fg": "purple"
+				}
 				// ...
 			}
 			// _comment keys are removed and string buttons are resolved
@@ -88,7 +95,6 @@ the legend. This database describes everything symbolically, giving the UI
 designer complete freedom of how to draw the icons, and the freedom to
 choose colors that mesh best with their design.
 
-Additionally, the SDL DB format is very poor for authoring, and is highly
-prone to merge conflicts. This repo chooses one JSON file per controller as
-an authoring format and provides a simplistic build script to create a familiar
-TXT format.
+Additionally, the SDL DB format is hard to read, is very poor for authoring,
+and is highly prone to merge conflicts. This repo chooses one JSON file per
+controller as an authoring format.
