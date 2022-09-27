@@ -40,6 +40,8 @@ are displayed there.
 Unlike the SDL DB, this DB is not tied to a particular software project;
 the "reference library" is the implementation of this in unvkit, my 2D
 Java game engine that uses GLFW. But this is not the "one true library".
+Also available is `www/build.js` in this repo, which creates the
+[demo web page](https://unascribed.github.io/SymbolicControllerDB/).
 
 Under Releases, a merged JSON file containing an array of every defined
 controller with comments removed is offered. The structure is, roughly:
