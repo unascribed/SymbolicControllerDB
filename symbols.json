@@ -1,0 +1,257 @@
+{
+	"colors": {
+		"_comment": "The first entry in the array is the color when this is used as a bg - the second is the color when used as an fg. These are only suggestions, games are free to replace these",
+		"red": ["F44336", "B71C1C"],
+		"pink": ["E91E63", "F06292"],
+		"purple": ["9C27B0", "BA68C8"],
+		"blue": ["3F51B5", "7986CB"],
+		"cyan": ["00BCD4", "4DD0E1"],
+		"teal": ["009688", "4DB6AC"],
+		"green": ["4CAF50", "81C784"],
+		"lime": ["CDDC39", "DCE775"],
+		"yellow": ["FFEB3B", "FFF176"],
+		"orange": ["FF9800", "FFB74D"],
+		"brown": ["795548", "A1887F"],
+		"white": ["E0E0E0", "FAFAFA"],
+		"black": ["212121", "616161"],
+		"gray": ["607D8B", "263238"]
+	},
+	"buttons": {
+		"_comment": [
+			"These describe the various kinds of buttons found on controllers in the database.", "shape is the shape of the button itself",
+			"icon (may be absent) is the symbolic name of the button's legend",
+			"text is a best-effort Unicode representation of the legend",
+			"text_basic (may be absent if text is all ASCII) is a best effort ASCII representation of the legend",
+			"shape_is_button is defined and true if the shape is itself the button, and an additional icon or text would be redundant.",
+			"The idea is a new button of an old shape can be drawn by games using the database even without explicit support by invoking a text renderer with Unicode support."
+		],
+
+		"_comment": "First up, the Xbox 360 style buttons native to the SDL controller DB.",
+		"A": {
+			"shape": "circle",
+			"text": "A"
+		},
+		"B": {
+			"shape": "circle",
+			"text": "B"
+		},
+		"X": {
+			"shape": "circle",
+			"text": "X"
+		},
+		"Y": {
+			"shape": "circle",
+			"text": "Y"
+		},
+		"LS": {
+			"shape": "circle",
+			"text": "LS"
+		},
+		"RS": {
+			"shape": "circle",
+			"text": "RS"
+		},
+		"LB": {
+			"shape": "bumper_left",
+			"text": "LB"
+		},
+		"RB": {
+			"shape": "bumper_right",
+			"text": "RB"
+		},
+		"LT": {
+			"shape": "trigger_left",
+			"text": "LT"
+		},
+		"RT": {
+			"shape": "trigger_right",
+			"text": "RT"
+		},
+		"Guide": {
+			"shape": "circle",
+			"icon": "xbox",
+			"text": "Guide"
+		},
+
+		"_comment": "PlayStation naming of the sticks/shoulders",
+		"L3": {
+			"shape": "circle",
+			"text": "L3"
+		},
+		"R3": {
+			"shape": "circle",
+			"text": "R3"
+		},
+		"L1": {
+			"shape": "bumper_left",
+			"text": "L1"
+		},
+		"R1": {
+			"shape": "bumper_right",
+			"text": "R1"
+		},
+		"L2": {
+			"shape": "trigger_left",
+			"text": "L2"
+		},
+		"R2": {
+			"shape": "trigger_right",
+			"text": "R2"
+		},
+		"PS": {
+			"shape": "circle",
+			"icon": "playstation",
+			"text": "PS"
+		},
+
+		"_comment": "Nintendo naming of the sticks/shoulders",
+		"nx_LS": {
+			"shape": "stick_down",
+			"text": "L"
+		},
+		"nx_RS": {
+			"shape": "stick_down",
+			"text": "R"
+		},
+		"nx_L": {
+			"shape": "bumper_left",
+			"text": "L"
+		},
+		"nx_R": {
+			"shape": "bumper_right",
+			"text": "R"
+		},
+		"nx_ZL": {
+			"shape": "trigger_left",
+			"text": "ZL"
+		},
+		"nx_ZR": {
+			"shape": "trigger_right",
+			"text": "ZR"
+		},
+
+		"_comment": "Iconographic buttons seen on some generic controllers",
+		"power": {
+			"shape": "circle",
+			"icon": "power",
+			"text": "⏻",
+			"text_basic": "Power"
+		},
+		"up_arrow": {
+			"shape": "circle",
+			"icon": "up_arrow",
+			"text": "↑",
+			"text_basic": "Up Arrow"
+		},
+		"down_arrow": {
+			"shape": "circle",
+			"icon": "down_arrow",
+			"text": "↓",
+			"text_basic": "Down Arrow"
+		},
+		"left_arrow": {
+			"shape": "circle",
+			"icon": "left_arrow",
+			"text": "←",
+			"text_basic": "Left Arrow"
+		},
+		"right_arrow": {
+			"shape": "circle",
+			"icon": "right_arrow",
+			"text": "→",
+			"text_basic": "Right Arrow"
+		},
+
+		"_comment": "Geometric shapes that take up the entire button space, usually seen on PlayStation controllers",
+		"triangle": {
+			"shape": "circle",
+			"icon": "triangle",
+			"text": "△",
+			"text_basic": "Triangle"
+		},
+		"square": {
+			"shape": "circle",
+			"icon": "square",
+			"text": "□",
+			"text_basic": "Square"
+		},
+		"circle": {
+			"shape": "circle",
+			"icon": "circle",
+			"text": "○",
+			"text_basic": "Circle"
+		},
+		"cross": {
+			"shape": "circle",
+			"icon": "cross",
+			"text": "⨯",
+			"text_basic": "Cross"
+		},
+
+		"_comment": "Buttons that are themselves special shapes",
+		"nx_minus": {
+			"shape": "minus",
+			"shape_is_button": true,
+			"text": "-"
+		},
+		"nx_plus": {
+			"shape": "plus",
+			"shape_is_button": true,
+			"text": "+"
+		},
+		"ps_start": {
+			"shape": "triangle_right",
+			"shape_is_button": true,
+			"text": "Start"
+		},
+		"ps_back": {
+			"shape": "rectangle_horizontal",
+			"shape_is_button": true,
+			"text": "Back"
+		},
+
+		"_comment": "A D-Pad that looks similar to that on PlayStation controllers; four pointed rectangles pointing inward, creating an X shape between the buttons",
+		"dpad_inward_up": {
+			"shape": "dpad_inward_up",
+			"shape_is_button": true,
+			"text": "D-Pad Up"
+		},
+		"dpad_inward_down": {
+			"shape": "dpad_inward_down",
+			"shape_is_button": true,
+			"text": "D-Pad Down"
+		},
+		"dpad_inward_left": {
+			"shape": "dpad_inward_left",
+			"shape_is_button": true,
+			"text": "D-Pad Left"
+		},
+		"dpad_inward_right": {
+			"shape": "dpad_inward_right",
+			"shape_is_button": true,
+			"text": "D-Pad Right"
+		},
+
+		"_comment": "A D-Pad like that on Nintendo's Joy-Con, which is simply a cluster of four circular buttons",
+		"dpad_circle_up": {
+			"shape": "circle_cluster_up",
+			"shape_is_button": true,
+			"text": "D-Pad Up"
+		},
+		"dpad_circle_down": {
+			"shape": "circle_cluster_down",
+			"shape_is_button": true,
+			"text": "D-Pad Down"
+		},
+		"dpad_circle_left": {
+			"shape": "circle_cluster_left",
+			"shape_is_button": true,
+			"text": "D-Pad Left"
+		},
+		"dpad_circle_right": {
+			"shape": "circle_cluster_right",
+			"shape_is_button": true,
+			"text": "D-Pad Right"
+		}
+	}
+}

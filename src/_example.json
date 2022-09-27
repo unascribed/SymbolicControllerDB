@@ -1,0 +1,66 @@
+{
+	"_comment": "The name a user would expect this controller to be referred to as - usually duplicates the SDL controller DB",
+	"name": "ASUS Gamepad",
+
+	"_comment": "The default bg/fg color for buttons that don't define it",
+	"bg": "black",
+	"fg": "white",
+
+	"_comment": [
+		"Visual descriptions of the SDL buttons. Keys are the SDL button name.",
+		"Values can either be a string or an object. A string is equivalent to an object that only defines 'type'."
+	],
+	"buttons": {
+		"_comment": [
+			"The ASUS Gamepad uses a typical Xbox 360-like layout for its primary button cluster.",
+			"However, unlike the Xbox 360 controller, the buttons are black with colored legends.",
+			"The 360 controller has colored buttons with embossed legends."
+		],
+		"a": {
+			"_comment": [
+				"See symbols.json for the valid choices here.",
+				"bg is the color of the button itself, fg is the color of the legend.",
+				"All of these are symbolic names to allow customization."
+			],
+			"type": "A",
+			"bg": "black",
+			"fg": "green"
+		},
+		"b": {
+			"type": "B",
+			"bg": "black",
+			"fg": "red"
+		},
+		"x": {
+			"type": "X",
+			"bg": "black",
+			"fg": "blue"
+		},
+		"y": {
+			"type": "Y",
+			"bg": "black",
+			"fg": "yellow"
+		},
+
+		"_comment": [
+			"The ASUS Gamepad's bumpers and triggers are completely unlabelled.",
+			"They're equivalent to the 360 buttons, however, so we map them as such."
+		],
+		"leftshoulder": "LB",
+		"rightshoulder": "RB",
+		"lefttrigger": "LT",
+		"righttrigger": "RT",
+		"leftstick": "LS",
+		"rightstick": "RS",
+
+		"_comment": "The D-Pad looks like a PlayStation gamepad. See symbols.json for a further description.",
+		"dpup": "dpad_inward_up",
+		"dpdown": "dpad_inward_down",
+		"dpleft": "dpad_inward_left",
+		"dpright": "dpad_inward_right",
+
+		"guide": "power",
+		"back": "left_arrow",
+		"start": "circle"
+	}
+}

@@ -1,0 +1,40 @@
+{
+	"name": "ASUS Gamepad",
+	"bg": "black",
+	"fg": "white",
+	"buttons": {
+		"a": {
+			"type": "A",
+			"bg": "black",
+			"fg": "green"
+		},
+		"b": {
+			"type": "B",
+			"bg": "black",
+			"fg": "red"
+		},
+		"x": {
+			"type": "X",
+			"bg": "black",
+			"fg": "blue"
+		},
+		"y": {
+			"type": "Y",
+			"bg": "black",
+			"fg": "yellow"
+		},
+		"leftshoulder": "LB",
+		"rightshoulder": "RB",
+		"lefttrigger": "LT",
+		"righttrigger": "RT",
+		"dpup": "dpad_inward_up",
+		"dpdown": "dpad_inward_down",
+		"dpleft": "dpad_inward_left",
+		"dpright": "dpad_inward_right",
+		"leftstick": "LS",
+		"rightstick": "RS",
+		"guide": "power",
+		"back": "left_arrow",
+		"start": "circle"
+	}
+}
