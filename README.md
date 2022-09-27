@@ -17,9 +17,10 @@ SDL database.
 
 ## Contributing
 
-You will need to know the SDL GUID of your controller, such as 05000000050b00000045000040000000.
-Create a file at e.g. `src/05000000050b00000045000040000000.json` describing
-the controller. Check `src/_example.json` for the general structure.
+You will need to know the SDL GUIDs of your controller, such as 05000000050b00000045000040000000.
+Create a file at e.g. `src/asus-gamepad.json` describing the controller. The
+filename is not included in the release JSON; it's just an identifier during
+authoring. Check `src/_example.json` for the general structure.
 
 See [symbols.json](symbols.json) for an iteration of all currently defined
 symbolic colors and buttons, and their default values.
@@ -39,9 +40,36 @@ Unlike the SDL DB, this DB is not tied to a particular software project;
 the "reference library" is the implementation of this in unvkit, my 2D
 Java game engine that uses GLFW. But this is not the "one true library".
 
-Under Releases, exports are provided in a CSV-like TXT format reminiscent of
-the SDL DB, and a JSON format that's a more direct dump of the authoring
-format in this repo.
+Under Releases, a merged JSON file containing an array of every defined
+controller with comments removed is offered. The structure is, roughly:
+
+```js
+{
+	"controllers": [
+		{
+			// controller definition like those in src
+			"name": "Foo Bar Inc. Gameius Padius",
+			"guids": [
+				"01234567890123456789012345678901",
+				"12345678901234567890123456789012"
+			],
+			"buttons": {
+				// ...
+			}
+			// _comment keys are removed and string buttons are resolved
+		}
+	],
+	"symbols": {
+		// the contents of symbols.json with _comment keys removed, e.g.
+		"power": {
+			"shape": "circle",
+			"icon": "power",
+			"text": "⏻",
+			"text_basic": "Power"
+		}
+	}
+}
+```
 
 ## Prior Art
 

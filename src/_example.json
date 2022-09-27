@@ -2,13 +2,21 @@
 	"_comment": "The name a user would expect this controller to be referred to as - usually duplicates the SDL controller DB",
 	"name": "ASUS Gamepad",
 
-	"_comment": "The default bg/fg color for buttons that don't define it",
+	"_comment": "Every matching SDL Controller DB GUID. One controller generally has different GUIDs on different platforms.",
+	"guids": [
+		"03000000050b00000045000031000000",
+		"05000000050b00000045000031000000",
+		"05000000050b00000045000040000000"
+	],
+
+	"_comment": "The default bg/fg color for buttons that don't define it. Not present in the release JSON file.",
 	"bg": "black",
 	"fg": "white",
 
 	"_comment": [
 		"Visual descriptions of the SDL buttons. Keys are the SDL button name.",
-		"Values can either be a string or an object. A string is equivalent to an object that only defines 'type'."
+		"Values can either be a string or an object. A string is equivalent to an object that only defines 'type'.",
+		"Strings will never be seen in the release JSON files — they're resolved by the build script."
 	],
 	"buttons": {
 		"_comment": [
