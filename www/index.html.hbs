@@ -53,6 +53,7 @@
 		{{#icons}}
 		.icon-{{symbol}} {
 			mask-image: url({{icon}});
+			-webkit-mask-image: url({{icon}});
 			background: var(--mask-color);
 			font-size: 0;
 		}
@@ -63,6 +64,7 @@
 		{{#alphabet}}
 		.text-{{upper}} {
 			mask-image: url(https://cdn.jsdelivr.net/npm/@mdi/svg@7.0.96/svg/alpha-{{lower}}.svg);
+			-webkit-mask-image: url(https://cdn.jsdelivr.net/npm/@mdi/svg@7.0.96/svg/alpha-{{lower}}.svg);
 			background: var(--mask-color);
 			font-size: 0;
 		}
