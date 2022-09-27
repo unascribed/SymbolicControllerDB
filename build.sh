@@ -20,4 +20,4 @@ mkdir -p dist
 	echo '],"symbols":'
 	cat symbols.json
 	echo '}'
-) |tee /dev/stderr | jq -acM 'del(..|.["_comment"]?)' > dist/symboliccontrollerdb.json
+) | jq -acM 'del(..|.["_comment"]?)' > dist/symboliccontrollerdb.json

@@ -68,7 +68,7 @@
 		"dpright": "dpad_inward_right",
 
 		"guide": "power",
-		"back": "left_arrow",
+		"back": "arrow_left",
 		"start": "circle"
 	}
 }

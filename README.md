@@ -1,8 +1,9 @@
 # Symbolic Controller DB
 
-The SDL controller DB provides useful abstract descriptions of *where*
-buttons are, but hammers them all into the terminology of an Xbox 360
-controller.
+The [SDL controller DB](https://github.com/gabomdq/SDL_GameControllerDB)
+provides useful abstract descriptions of *where* buttons are and how
+controllers behave, but hammers them all into the terminology of an Xbox
+360 controller.
 
 Showing users inputs on their controller using only the SDL DB is a
 poor and messy experience for users and developers alike.
@@ -26,7 +27,7 @@ See [symbols.json](symbols.json) for an iteration of all currently defined
 symbolic colors and buttons, and their default values.
 
 Pull requests very welcome. A database like this is only as useful as the
-quantity of controllers it describes.
+number of controllers it describes.
 
 Not sure how to write the needed JSON file? Open an issue with the SDL GUID
 of your controller and a picture of it from the relevant angles; from in front

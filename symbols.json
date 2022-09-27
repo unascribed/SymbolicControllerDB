@@ -67,10 +67,22 @@
 			"shape": "trigger_right",
 			"text": "RT"
 		},
-		"Guide": {
+		"xb_guide": {
 			"shape": "circle",
 			"icon": "xbox",
 			"text": "Guide"
+		},
+		"xb_back": {
+			"shape": "circle",
+			"icon": "triangle_left",
+			"text": "◀",
+			"text_basic": "Back"
+		},
+		"xb_start": {
+			"shape": "circle",
+			"icon": "triangle_right",
+			"text": "▶",
+			"text_basic": "Start"
 		},
 
 		"_comment": "PlayStation naming of the sticks/shoulders",
@@ -137,27 +149,27 @@
 			"text": "⏻",
 			"text_basic": "Power"
 		},
-		"up_arrow": {
+		"arrow_up": {
 			"shape": "circle",
-			"icon": "up_arrow",
+			"icon": "arrow_up",
 			"text": "↑",
 			"text_basic": "Up Arrow"
 		},
-		"down_arrow": {
+		"arrow_down": {
 			"shape": "circle",
-			"icon": "down_arrow",
+			"icon": "arrow_down",
 			"text": "↓",
 			"text_basic": "Down Arrow"
 		},
-		"left_arrow": {
+		"arrow_left": {
 			"shape": "circle",
-			"icon": "left_arrow",
+			"icon": "arrow_left",
 			"text": "←",
 			"text_basic": "Left Arrow"
 		},
-		"right_arrow": {
+		"arrow_right": {
 			"shape": "circle",
-			"icon": "right_arrow",
+			"icon": "arrow_right",
 			"text": "→",
 			"text_basic": "Right Arrow"
 		},
@@ -200,14 +212,16 @@
 			"text": "+"
 		},
 		"ps_start": {
-			"shape": "triangle_right",
+			"shape": "long_triangle_right",
 			"shape_is_button": true,
-			"text": "Start"
+			"text": "►",
+			"text_basic": "Start"
 		},
 		"ps_back": {
 			"shape": "rectangle_horizontal",
 			"shape_is_button": true,
-			"text": "Back"
+			"text": "▬",
+			"text_basic": "Back"
 		},
 
 		"_comment": "A D-Pad that looks similar to that on PlayStation controllers; four pointed rectangles pointing inward, creating an X shape between the buttons",
@@ -228,6 +242,28 @@
 		},
 		"dpad_inward_right": {
 			"shape": "dpad_inward_right",
+			"shape_is_button": true,
+			"text": "D-Pad Right"
+		},
+
+		"_comment": "A standard plus-shaped D-Pad",
+		"dpad_cross_up": {
+			"shape": "dpad_cross_up",
+			"shape_is_button": true,
+			"text": "D-Pad Up"
+		},
+		"dpad_cross_down": {
+			"shape": "dpad_cross_down",
+			"shape_is_button": true,
+			"text": "D-Pad Down"
+		},
+		"dpad_cross_left": {
+			"shape": "dpad_cross_left",
+			"shape_is_button": true,
+			"text": "D-Pad Left"
+		},
+		"dpad_cross_right": {
+			"shape": "dpad_cross_right",
 			"shape_is_button": true,
 			"text": "D-Pad Right"
 		},

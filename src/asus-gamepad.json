@@ -39,7 +39,7 @@
 		"leftstick": "LS",
 		"rightstick": "RS",
 		"guide": "power",
-		"back": "left_arrow",
+		"back": "arrow_left",
 		"start": "circle"
 	}
 }
