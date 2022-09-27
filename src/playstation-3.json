@@ -18,12 +18,12 @@
 		"b": {
 			"type": "circle",
 			"bg": "black",
-			"fg": "red"
+			"fg": "pink"
 		},
 		"x": {
 			"type": "square",
 			"bg": "black",
-			"fg": "pink"
+			"fg": "purple"
 		},
 		"y": {
 			"type": "triangle",
