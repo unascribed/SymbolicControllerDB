@@ -30,8 +30,8 @@
 		"030000005e040000a102000007010000",
 		"030000005e040000a102000014010000"
 	],
-	"bg": "black",
-	"fg": "white",
+	"bg": "white",
+	"fg": "gray",
 	"buttons": {
 		"a": {
 			"type": "A",
@@ -50,7 +50,7 @@
 		},
 		"y": {
 			"type": "Y",
-			"bg": "yellow",
+			"bg": "orange",
 			"fg": "yellow"
 		},
 		"leftshoulder": "LB",
@@ -61,8 +61,16 @@
 		"dpdown": "dpad_cross_down",
 		"dpleft": "dpad_cross_left",
 		"dpright": "dpad_cross_right",
-		"leftstick": "LS",
-		"rightstick": "RS",
+		"leftstick": {
+			"type": "LS",
+			"bg": "gray",
+			"fg": "white"
+		},
+		"rightstick": {
+			"type": "RS",
+			"bg": "gray",
+			"fg": "white"
+		},
 		"guide": {
 			"type": "xb_guide",
 			"bg": "gray",

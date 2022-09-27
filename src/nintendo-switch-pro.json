@@ -1,0 +1,36 @@
+{
+	"name": "Nintendo Switch Pro Controller",
+	"guids": [
+		"030000007e0500000920000000000000",
+		"030000007e0500000920000000000000",
+		"030000007e0500000920000001000000",
+		"030000007e0500000920000011810000",
+		"050000007e0500000920000001000000",
+		"050000007e0500000920000001800000",
+		"050000007e05000009200000ffff0f00",
+		"34323437396534643531326161633738",
+		"50726f20436f6e74726f6c6c65720000",
+		"050000007e05000009200000ff870000"
+	],
+	"bg": "black",
+	"fg": "white",
+	"buttons": {
+		"a": "B",
+		"b": "A",
+		"x": "Y",
+		"y": "X",
+		"leftshoulder": "nx_L",
+		"rightshoulder": "nx_R",
+		"lefttrigger": "nx_ZL",
+		"righttrigger": "nx_ZR",
+		"dpup": "dpad_cross_up",
+		"dpdown": "dpad_cross_down",
+		"dpleft": "dpad_cross_left",
+		"dpright": "dpad_cross_right",
+		"leftstick": "nx_LS",
+		"rightstick": "nx_RS",
+		"guide": "home",
+		"back": "minus",
+		"start": "plus"
+	}
+}

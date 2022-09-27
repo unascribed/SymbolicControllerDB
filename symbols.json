@@ -1,19 +1,19 @@
 {
 	"colors": {
 		"_comment": "The first entry in the array is the color when this is used as a bg - the second is the color when used as an fg. These are only suggestions, games are free to replace these",
-		"red": ["F44336", "B71C1C"],
+		"red": ["D32F2F", "EF9A9A"],
 		"pink": ["E91E63", "F06292"],
 		"purple": ["9C27B0", "BA68C8"],
-		"blue": ["3F51B5", "7986CB"],
+		"blue": ["3F51B5", "4FC3F7"],
 		"cyan": ["00BCD4", "4DD0E1"],
 		"teal": ["009688", "4DB6AC"],
-		"green": ["4CAF50", "81C784"],
-		"lime": ["CDDC39", "DCE775"],
-		"yellow": ["FFEB3B", "FFF176"],
+		"green": ["388E3C", "81C784"],
+		"lime": ["8BC34A", "D4E157"],
+		"yellow": ["FDD835", "FFF176"],
 		"orange": ["FF9800", "FFB74D"],
 		"brown": ["795548", "A1887F"],
 		"white": ["E0E0E0", "FAFAFA"],
-		"black": ["212121", "616161"],
+		"black": ["212121", "424242"],
 		"gray": ["607D8B", "263238"]
 	},
 	"buttons": {
@@ -141,8 +141,23 @@
 			"shape": "trigger_right",
 			"text": "ZR"
 		},
+		"minus": {
+			"shape": "circle",
+			"icon": "minus",
+			"text": "-"
+		},
+		"plus": {
+			"shape": "circle",
+			"icon": "plus",
+			"text": "+"
+		},
 
 		"_comment": "Iconographic buttons seen on some generic controllers",
+		"home": {
+			"shape": "circle",
+			"icon": "home",
+			"text": "Home"
+		},
 		"power": {
 			"shape": "circle",
 			"icon": "power",
@@ -189,7 +204,7 @@
 		},
 		"circle": {
 			"shape": "circle",
-			"icon": "circle",
+			"icon": "circle_outline",
 			"text": "○",
 			"text_basic": "Circle"
 		},
@@ -288,6 +303,33 @@
 			"shape": "circle_cluster_right",
 			"shape_is_button": true,
 			"text": "D-Pad Right"
+		},
+
+
+		"_comment": "Generic directional buttons",
+		"dpad_up": {
+			"shape": "circle",
+			"icon": "triangle_up",
+			"text": "▲",
+			"text_basic": "D-Pad Up"
+		},
+		"dpad_down": {
+			"shape": "circle",
+			"icon": "triangle_down",
+			"text": "▼",
+			"text_basic": "D-Pad Down"
+		},
+		"dpad_left": {
+			"shape": "circle",
+			"icon": "triangle_left",
+			"text": "◀",
+			"text_basic": "D-Pad Left"
+		},
+		"dpad_right": {
+			"shape": "circle",
+			"icon": "triangle_right",
+			"text": "▶",
+			"text_basic": "D-Pad Right"
 		}
 	}
 }

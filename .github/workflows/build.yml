@@ -26,3 +26,14 @@ jobs:
           prerelease: false
           title: "Latest Build"
           files: dist/*
+      - name: Create page
+        run: |
+          cd www
+          npm i
+          node build.js
+      - name: Upload pages artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: 'www'
+      - name: Deploy pages
+        uses: actions/deploy-pages@v1.2.1

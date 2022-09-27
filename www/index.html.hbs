@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Symbolic Controller Database</title>
+	<style>
+		body {
+			font-family: sans-serif;
+		}
+		tr {
+			margin: 0;
+		}
+		td, th {
+			text-align: center;
+			padding: 4px;
+			border-right: 1px #000A solid;
+		}
+		.button {
+			position: relative;
+			width: 24px;
+			height: 24px;
+			margin: auto;
+			filter: drop-shadow(2px 2px 0px #0006);
+		}
+		.shape, .icon {
+			width: 24px;
+			height: 24px;
+			position: absolute;
+			top: 0; left: 0;
+		}
+		.shape {
+			--mask-color: var(--bg);
+		}
+		.icon {
+			--mask-color: var(--fg);
+			color: var(--fg);
+			text-align: center;
+			overflow: visible;
+			white-space: pre;
+			font-weight: bold;
+			line-height: 24px;
+			vertical-align: middle;
+			font-size: 12px;
+		}
+		{{#colors}}
+		.bg-{{name}} {
+			--bg: #{{bg}};
+		}
+		.fg-{{name}} {
+			--fg: #{{fg}};
+		}
+		{{/colors}}
+		{{#icons}}
+		.icon-{{symbol}} {
+			mask-image: url({{icon}});
+			background: var(--mask-color);
+			font-size: 0;
+		}
+		.shape.icon-{{symbol}}.shape-is-button + .icon {
+			display: none;
+		}
+		{{/icons}}
+		{{#alphabet}}
+		.text-{{upper}} {
+			mask-image: url(https://cdn.jsdelivr.net/npm/@mdi/svg@7.0.96/svg/alpha-{{lower}}.svg);
+			background: var(--mask-color);
+			font-size: 0;
+		}
+		{{/alphabet}}
+	</style>
+</head>
+<body>
+	<table>
+		<tr>
+			<th>Controller</th>
+			<th>South (A)</th>
+			<th>East (B)</th>
+			<th>West (X)</th>
+			<th>North (Y)</th>
+			<th>Left Shoulder</th>
+			<th>Right Shoulder</th>
+			<th>Left Trigger</th>
+			<th>Right Trigger</th>
+			<th>D-Pad Up</th>
+			<th>D-Pad Down</th>
+			<th>D-Pad Left</th>
+			<th>D-Pad Right</th>
+			<th>Left Stick</th>
+			<th>Right Stick</th>
+			<th>Back</th>
+			<th>Guide</th>
+			<th>Start</th>
+		</tr>
+		{{#controllers}}
+		<tr>
+			<td>{{name}}</td>
+			<td>{{{a}}}</td>
+			<td>{{{b}}}</td>
+			<td>{{{x}}}</td>
+			<td>{{{y}}}</td>
+			<td>{{{leftshoulder}}}</td>
+			<td>{{{rightshoulder}}}</td>
+			<td>{{{lefttrigger}}}</td>
+			<td>{{{righttrigger}}}</td>
+			<td>{{{dpup}}}</td>
+			<td>{{{dpdown}}}</td>
+			<td>{{{dpleft}}}</td>
+			<td>{{{dpright}}}</td>
+			<td>{{{leftstick}}}</td>
+			<td>{{{rightstick}}}</td>
+			<td>{{{back}}}</td>
+			<td>{{{guide}}}</td>
+			<td>{{{start}}}</td>
+		</tr>
+		{{/controllers}}
+	</table>
+</body>
+</html>

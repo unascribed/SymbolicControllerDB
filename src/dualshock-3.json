@@ -1,0 +1,43 @@
+{
+	"name": "Sony DualShock 3",
+	"guids": [
+		"03000000317300000100000000000000"
+	],
+	"bg": "black",
+	"fg": "white",
+	"buttons": {
+		"a": {
+			"type": "cross",
+			"bg": "black",
+			"fg": "blue"
+		},
+		"b": {
+			"type": "circle",
+			"bg": "black",
+			"fg": "red"
+		},
+		"x": {
+			"type": "square",
+			"bg": "black",
+			"fg": "pink"
+		},
+		"y": {
+			"type": "triangle",
+			"bg": "black",
+			"fg": "green"
+		},
+		"leftshoulder": "L1",
+		"rightshoulder": "R1",
+		"lefttrigger": "L2",
+		"righttrigger": "R2",
+		"dpup": "dpad_inward_up",
+		"dpdown": "dpad_inward_down",
+		"dpleft": "dpad_inward_left",
+		"dpright": "dpad_inward_right",
+		"leftstick": "L3",
+		"rightstick": "R3",
+		"guide": "PS",
+		"back": "ps_back",
+		"start": "ps_start"
+	}
+}
