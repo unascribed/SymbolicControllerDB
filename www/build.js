@@ -57,8 +57,7 @@ let ctx = {
 		playstation: "playstation.svg",
 		rectangle_horizontal: "rectangle.svg",
 		long_triangle_right: "long-triangle-right.svg",
-	}).map(([k, v]) => ({symbol:k,icon:v.replace("mdi/", "https://cdn.jsdelivr.net/npm/@mdi/svg@7.0.96/svg/")})),
-	alphabet: "abcdefghijklmnopqrstuvwxyz".split("").map(v => ({upper: v.toUpperCase(), lower: v}))
+	}).map(([k, v]) => ({symbol:k,icon:v.replace("mdi/", "https://cdn.jsdelivr.net/npm/@mdi/svg@7.0.96/svg/")}))
 };
 data.controllers.forEach((ctrl) => {
 	ctx.controllers.push({

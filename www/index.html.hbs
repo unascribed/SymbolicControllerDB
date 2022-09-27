@@ -3,17 +3,26 @@
 <head>
 	<meta charset="utf-8">
 	<title>Symbolic Controller Database</title>
+	<link href="https://fonts.bunny.net/css?family=noto-sans-symbols:700" rel="stylesheet"/>
 	<style>
 		body {
+			background: #EEE;
+			color: #111;
 			font-family: sans-serif;
+			padding: 0 16px;
 		}
-		tr {
-			margin: 0;
+		table {
+			border-spacing: 0;
+			border: 1px #000 solid;
 		}
 		td, th {
 			text-align: center;
 			padding: 4px;
+			border: none;
 			border-right: 1px #000A solid;
+		}
+		td:last-child, th:last-child {
+			border-right: none;
 		}
 		.button {
 			position: relative;
@@ -21,6 +30,7 @@
 			height: 24px;
 			margin: auto;
 			filter: drop-shadow(2px 2px 0px #0006);
+			font-family: 'Noto Sans Symbols', sans-serif;
 		}
 		.shape, .icon {
 			width: 24px;
@@ -42,6 +52,26 @@
 			vertical-align: middle;
 			font-size: 12px;
 		}
+		p {
+			max-width: 560px;
+		}
+		th {
+			border-bottom: 1px #000 solid;
+		}
+		th[colspan] {
+			border-bottom: none;
+		}
+		.constrain {
+			padding-left: 0;
+			padding-right: 0;
+			width: 45px;
+		}
+		tbody tr:nth-child(2n) {
+			background: #0001;
+		}
+		thead tr {
+			background: #0132;
+		}
 		{{#colors}}
 		.bg-{{name}} {
 			--bg: #{{bg}};
@@ -61,14 +91,9 @@
 			display: none;
 		}
 		{{/icons}}
-		{{#alphabet}}
-		.text-{{upper}} {
-			mask-image: url(https://cdn.jsdelivr.net/npm/@mdi/svg@7.0.96/svg/alpha-{{lower}}.svg);
-			-webkit-mask-image: url(https://cdn.jsdelivr.net/npm/@mdi/svg@7.0.96/svg/alpha-{{lower}}.svg);
-			background: var(--mask-color);
-			font-size: 0;
+		.icon-home {
+			transform: scale(0.8);
 		}
-		{{/alphabet}}
 	</style>
 </head>
 <body>
@@ -88,49 +113,62 @@
 	addition to how they're shaped and interfaced with?
 	</p>
 	<a href="https://github.com/unascribed/SymbolicControllerDB">More info and contributing</a>
+	<hr>
 	<table>
+		<thead>
 		<tr>
-			<th>Controller</th>
-			<th>South (A)</th>
-			<th>East (B)</th>
-			<th>West (X)</th>
-			<th>North (Y)</th>
-			<th>Left Shoulder</th>
-			<th>Right Shoulder</th>
-			<th>Left Trigger</th>
-			<th>Right Trigger</th>
-			<th>D-Pad Up</th>
-			<th>D-Pad Down</th>
-			<th>D-Pad Left</th>
-			<th>D-Pad Right</th>
-			<th>Left Stick</th>
-			<th>Right Stick</th>
-			<th>Back</th>
-			<th>Guide</th>
-			<th>Start</th>
+			<th rowspan="2">Controller</th>
+			<th colspan="4">Primary Cluster</th>
+			<th colspan="2">Shoulder</th>
+			<th colspan="2">Trigger</th>
+			<th colspan="4">D-Pad</th>
+			<th colspan="2">Sticks</th>
+			<th colspan="3">Meta</th>
 		</tr>
+		<tr>
+			<th class="constrain">South<br>(A)</th>
+			<th class="constrain">East<br>(B)</th>
+			<th class="constrain">West<br>(X)</th>
+			<th class="constrain">North<br>(Y)</th>
+			<th class="constrain">Left</th>
+			<th class="constrain">Right</th>
+			<th class="constrain">Left</th>
+			<th class="constrain">Right</th>
+			<th class="constrain">Up</th>
+			<th class="constrain">Down</th>
+			<th class="constrain">Left</th>
+			<th class="constrain">Right</th>
+			<th class="constrain">Left</th>
+			<th class="constrain">Right</th>
+			<th class="constrain">Back</th>
+			<th class="constrain">Guide</th>
+			<th class="constrain">Start</th>
+		</tr>
+		</thead>
+		<tbody>
 		{{#controllers}}
 		<tr>
 			<td>{{name}}</td>
-			<td>{{{a}}}</td>
-			<td>{{{b}}}</td>
-			<td>{{{x}}}</td>
-			<td>{{{y}}}</td>
-			<td>{{{leftshoulder}}}</td>
-			<td>{{{rightshoulder}}}</td>
-			<td>{{{lefttrigger}}}</td>
-			<td>{{{righttrigger}}}</td>
-			<td>{{{dpup}}}</td>
-			<td>{{{dpdown}}}</td>
-			<td>{{{dpleft}}}</td>
-			<td>{{{dpright}}}</td>
-			<td>{{{leftstick}}}</td>
-			<td>{{{rightstick}}}</td>
-			<td>{{{back}}}</td>
-			<td>{{{guide}}}</td>
-			<td>{{{start}}}</td>
+			<td class="constrain">{{{a}}}</td>
+			<td class="constrain">{{{b}}}</td>
+			<td class="constrain">{{{x}}}</td>
+			<td class="constrain">{{{y}}}</td>
+			<td class="constrain">{{{leftshoulder}}}</td>
+			<td class="constrain">{{{rightshoulder}}}</td>
+			<td class="constrain">{{{lefttrigger}}}</td>
+			<td class="constrain">{{{righttrigger}}}</td>
+			<td class="constrain">{{{dpup}}}</td>
+			<td class="constrain">{{{dpdown}}}</td>
+			<td class="constrain">{{{dpleft}}}</td>
+			<td class="constrain">{{{dpright}}}</td>
+			<td class="constrain">{{{leftstick}}}</td>
+			<td class="constrain">{{{rightstick}}}</td>
+			<td class="constrain">{{{back}}}</td>
+			<td class="constrain">{{{guide}}}</td>
+			<td class="constrain">{{{start}}}</td>
 		</tr>
 		{{/controllers}}
+		</tbody>
 	</table>
 </body>
 </html>
