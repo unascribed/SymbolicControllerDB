@@ -18,7 +18,8 @@
 	},
 	"buttons": {
 		"_comment": [
-			"These describe the various kinds of buttons found on controllers in the database.", "shape is the shape of the button itself",
+			"These describe the various kinds of buttons found on controllers in the database.",
+			"shape is the shape of the button itself",
 			"icon (may be absent) is the symbolic name of the button's legend",
 			"text is a best-effort Unicode representation of the legend",
 			"text_basic (may be absent if text is all ASCII) is a best effort ASCII representation of the legend",
