@@ -77,7 +77,7 @@
 		"leftstick": "LS",
 		"rightstick": "RS",
 		"guide": {
-			"type": "xb_guide",
+			"type": "xbox",
 			"bg": "white",
 			"fg": "black"
 		},

@@ -73,6 +73,11 @@
 			"icon": "xbox",
 			"text": "Guide"
 		},
+		"xbox": {
+			"shape": "circle",
+			"icon": "xbox",
+			"text": "Xbox"
+		},
 		"xb_back": {
 			"shape": "pill",
 			"icon": "triangle_left",
