@@ -205,6 +205,45 @@
 			"text": "+"
 		},
 
+		"_comment": "GameCube",
+		"gcn_stick": {
+			"shape": "circle",
+			"shape_is_button": true,
+			"text": "Control Stick"
+		},
+		"gcn_B": {
+			"shape": "circle_medium",
+			"text": "B"
+		},
+		"gcn_C": {
+			"shape": "circle_medium",
+			"text": "C"
+		},
+		"gcn_Y": {
+			"shape": "lozenge_curved_horizontal",
+			"text": "Y"
+		},
+		"gcn_X": {
+			"shape": "lozenge_curved_vertical",
+			"text": "X"
+		},
+		"gcn_Z": {
+			"shape": "lozenge_horizontal",
+			"text": "Z"
+		},
+		"gcn_start": {
+			"shape": "circle_medium",
+			"text": "Start"
+		},
+		"gcn_L": {
+			"shape": "trigger_left",
+			"text": "L"
+		},
+		"gcn_R": {
+			"shape": "trigger_right",
+			"text": "R"
+		},
+
 		"_comment": "Saturn stuff",
 		"saturn_L": {
 			"shape": "bumper_left",

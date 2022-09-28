@@ -72,6 +72,9 @@ let ctx = {
 		lozenge_horizontal: "lozenge-horizontal.svg",
 		radiate: "radiate.svg",
 		box: "mdi/square-medium.svg",
+		circle_medium: "circle-medium.svg",
+		lozenge_curved_horizontal: "lozenge-curved-horizontal.svg",
+		lozenge_curved_vertical: "lozenge-curved-vertical.svg",
 	}).map(([k, v]) => ({symbol:k,icon:v.replace("mdi/", "https://cdn.jsdelivr.net/npm/@mdi/svg@7.0.96/svg/")})),
 	shapes: distinct([
 		...Object.values(data.symbols.buttons).map(v => v.shape),
