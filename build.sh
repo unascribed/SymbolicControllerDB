@@ -15,7 +15,7 @@ mkdir -p dist
 		else
 			echo ','
 		fi
-		jq -M '.name as $name|[.bg as $defBg|.fg as $defFg|.buttons|keys[] as $k|.[$k] as {$type,$bg,$fg} ?// $type|{key:($k),value:{type:($type),bg:($bg // $defBg),fg:($fg // $defFg)}}]|from_entries|{name:$name,buttons:.}' "$j"
+		jq -M '.name as $name|.guids as $guids|[.bg as $defBg|.fg as $defFg|.buttons|keys[] as $k|.[$k] as {$type,$bg,$fg} ?// $type|{key:($k),value:{type:($type),bg:($bg // $defBg),fg:($fg // $defFg)}}]|from_entries|{name:$name,guids:$guids,buttons:.}' "$j"
 	done
 	echo '],"symbols":'
 	cat symbols.json
