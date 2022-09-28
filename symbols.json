@@ -154,7 +154,7 @@
 		"ps5_create": {
 			"shape": "lozenge_vertical",
 			"icon": "radiate",
-			"text": "⚞",
+			"text": "🗤",
 			"text_basic": "Create"
 		},
 		"ps5_options": {
