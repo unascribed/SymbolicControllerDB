@@ -1,0 +1,27 @@
+{
+	"name": "Steam Deck",
+	"guids": [
+		"03000000de2800000512000010010000"
+	],
+	"bg": "black",
+	"fg": "white",
+	"buttons": {
+		"a": "A",
+		"b": "B",
+		"x": "X",
+		"y": "Y",
+		"leftshoulder": "L1",
+		"rightshoulder": "R1",
+		"lefttrigger": "L2",
+		"righttrigger": "R2",
+		"dpup": "dpad_cross_up",
+		"dpdown": "dpad_cross_down",
+		"dpleft": "dpad_cross_left",
+		"dpright": "dpad_cross_right",
+		"leftstick": "L3",
+		"rightstick": "R3",
+		"guide": "steam",
+		"back": "deck_view",
+		"start": "deck_options"
+	}
+}

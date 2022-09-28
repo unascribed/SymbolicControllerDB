@@ -219,6 +219,24 @@
 			"text": "Start"
 		},
 
+		"_comment": "Steamed Decks",
+		"steam": {
+			"shape": "lozenge_horizontal",
+			"text": "STEAM"
+		},
+		"deck_view": {
+			"shape": "lozenge_horizontal",
+			"icon": "box",
+			"text": "▪",
+			"text_basic": "View"
+		},
+		"deck_options": {
+			"shape": "lozenge_horizontal",
+			"icon": "menu",
+			"text": "≡",
+			"text_basic": "Options"
+		},
+
 		"_comment": "Iconographic buttons seen on some generic controllers",
 		"home": {
 			"shape": "circle",
