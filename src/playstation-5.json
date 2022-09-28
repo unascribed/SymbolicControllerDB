@@ -1,0 +1,60 @@
+{
+	"name": "PlayStation 5 Controller",
+	"guids": [
+		"030000004c050000e60c000000000000",
+		"030000004c050000e60c000000010000",
+		"050000004c050000e60c000000010000",
+		"030000004c050000e60c000011010000",
+		"030000004c050000e60c000011810000",
+		"050000004c050000e60c000000010000",
+		"050000004c050000e60c000000810000",
+		"050000004c050000e60c0000fffe3f00",
+		"32346465346533616263386539323932",
+		"32633532643734376632656664383733",
+		"37363764353731323963323639666565",
+		"61303162353165316365336436343139",
+		"050000004c050000e60c0000df870000",
+		"050000004c050000e60c0000ff870000"
+	],
+	"bg": "black",
+	"fg": "white",
+	"buttons": {
+		"a": {
+			"type": "cross",
+			"bg": "black",
+			"fg": "blue"
+		},
+		"b": {
+			"type": "circle",
+			"bg": "black",
+			"fg": "pink"
+		},
+		"x": {
+			"type": "square",
+			"bg": "black",
+			"fg": "purple"
+		},
+		"y": {
+			"type": "triangle",
+			"bg": "black",
+			"fg": "green"
+		},
+		"leftshoulder": "L1",
+		"rightshoulder": "R1",
+		"lefttrigger": "L2",
+		"righttrigger": "R2",
+		"dpup": "dpad_inward_up",
+		"dpdown": "dpad_inward_down",
+		"dpleft": "dpad_inward_left",
+		"dpright": "dpad_inward_right",
+		"leftstick": "L3",
+		"rightstick": "R3",
+		"guide": {
+			"type": "ps5_PS",
+			"bg": "gray",
+			"fg": "white"
+		},
+		"back": "ps5_create",
+		"start": "ps5_options"
+	}
+}
