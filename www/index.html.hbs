@@ -59,6 +59,11 @@
 			top: 50%;
 			left: 50%;
 			transform: translateX(-50%) translateY(-50%);
+			white-space: pre;
+			font-weight: bold;
+			line-height: 12px;
+			font-size: 12px;
+			margin-top: -1px;
 		}
 		.shape, .icon {
 			width: 24px;
@@ -72,13 +77,7 @@
 		.icon {
 			--mask-color: var(--fg);
 			color: var(--fg);
-			text-align: center;
 			overflow: visible;
-			white-space: pre;
-			font-weight: bold;
-			line-height: 24px;
-			vertical-align: middle;
-			font-size: 12px;
 		}
 		p {
 			max-width: 560px;
@@ -145,7 +144,13 @@
 	</style>
 </head>
 <body>
-	<h1>Symbolic Controller DB</h1>
+	<h1>
+		<img class="invdark" style="width: 48px; height: 48px; vertical-align: middle" src="https://cdn.jsdelivr.net/npm/@mdi/svg@7.0.96/svg/microsoft-xbox-controller-off.svg">
+		Symbolic Controller DB
+		<img class="invdark" style="width: 48px; height: 48px; vertical-align: middle" src="https://cdn.jsdelivr.net/npm/@mdi/svg@7.0.96/svg/controller.svg">
+		<img class="invdark" style="width: 48px; height: 48px; vertical-align: middle" src="https://cdn.jsdelivr.net/npm/@mdi/svg@7.0.96/svg/gamepad-square.svg">
+		<img class="invdark" style="width: 48px; height: 48px; vertical-align: middle" src="https://cdn.jsdelivr.net/npm/@mdi/svg@7.0.96/svg/controller-classic.svg">
+	</h1>
 	<p>
 	The <a href="https://github.com/gabomdq/SDL_GameControllerDB">SDL controller DB</a>
 	provides useful abstract descriptions of <em>where</em> buttons are and how
