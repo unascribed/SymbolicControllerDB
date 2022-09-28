@@ -12,6 +12,18 @@
 			font-family: sans-serif;
 			padding: 0 16px;
 		}
+		@media(prefers-color-scheme: dark) {
+			body {
+				background: #333;
+				color: #EEE;
+			}
+			a:link {
+				color: #0AF;
+			}
+			.invdark {
+				filter: invert(100%);
+			}
+		}
 		table {
 			border-spacing: 0;
 			border: 1px #000 solid;
@@ -20,6 +32,7 @@
 			image-rendering: -moz-crisp-edges;
 			image-rendering: crisp-edges;
 			image-rendering: pixelated;
+			color: #000;
 		}
 		td, th {
 			text-align: center;
@@ -237,6 +250,6 @@
 		</tbody>
 	</table>
 	<hr>
-	Icons by <img style="width: 24px; height: 24px; vertical-align: middle" src="https://cdn.jsdelivr.net/npm/@mdi/svg@7.0.96/svg/vector-square.svg"> <a href="https://materialdesignicons.com">Material Design Icons</a>
+	Icons by <img class="invdark" style="width: 24px; height: 24px; vertical-align: middle" src="https://cdn.jsdelivr.net/npm/@mdi/svg@7.0.96/svg/vector-square.svg"> <a href="https://materialdesignicons.com">Material Design Icons</a>
 </body>
 </html>
