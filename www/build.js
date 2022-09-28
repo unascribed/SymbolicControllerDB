@@ -57,6 +57,11 @@ let ctx = {
 		playstation: "playstation.svg",
 		rectangle_horizontal: "rectangle.svg",
 		long_triangle_right: "long-triangle-right.svg",
+		skip_next: "mdi/skip-forward.svg",
+		skip_prev: "mdi/skip-backward.svg",
+		pill: "mdi/ellipse.svg",
+		menu: "mdi/menu.svg",
+		view: "view.svg",
 	}).map(([k, v]) => ({symbol:k,icon:v.replace("mdi/", "https://cdn.jsdelivr.net/npm/@mdi/svg@7.0.96/svg/")}))
 };
 data.controllers.forEach((ctrl) => {

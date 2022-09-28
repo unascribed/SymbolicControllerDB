@@ -1,0 +1,55 @@
+{
+	"name": "Sega Saturn Digital Pad",
+	"guids": ["03000000b40400000a01000000010000"],
+
+	"bg": "gray",
+	"fg": "white",
+
+	"buttons": {
+		"a": {
+			"type": "A",
+			"bg": "green",
+			"fg": "green"
+		},
+		"b": {
+			"type": "B",
+			"bg": "orange",
+			"fg": "yellow"
+		},
+		"x": "X",
+		"y": "Y",
+
+		"_comment": [
+			"Blatantly stolen straight from the Sega diagram at",
+			"https://github.com/gabomdq/SDL_GameControllerDB#mapping-guide",
+			"Is this seriously what they went with? Ugh fine"
+		],
+		"leftshoulder": {
+			"type": "saturn_L",
+			"bg": "pink",
+			"fg": "white"
+		},
+		"lefttrigger": {
+			"type": "saturn_R",
+			"bg": "pink",
+			"fg": "white"
+		},
+		"righttrigger": {
+			"type": "C",
+			"bg": "blue",
+			"fg": "blue"
+		},
+		"rightshoulder": "Z",
+
+		"start": {
+			"type": "saturn_start",
+			"bg": "pink",
+			"fg": "white"
+		},
+
+		"dpup": "dpad_cross_up",
+		"dpdown": "dpad_cross_down",
+		"dpleft": "dpad_cross_left",
+		"dpright": "dpad_cross_right"
+	}
+}

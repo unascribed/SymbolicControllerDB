@@ -74,16 +74,38 @@
 			"text": "Guide"
 		},
 		"xb_back": {
-			"shape": "circle",
+			"shape": "pill",
 			"icon": "triangle_left",
 			"text": "◀",
 			"text_basic": "Back"
 		},
 		"xb_start": {
-			"shape": "circle",
+			"shape": "pill",
 			"icon": "triangle_right",
 			"text": "▶",
 			"text_basic": "Start"
+		},
+		"xb_view": {
+			"shape": "circle",
+			"icon": "view",
+			"text": "⧉",
+			"text_basic": "View"
+		},
+		"xb_menu": {
+			"shape": "circle",
+			"icon": "menu",
+			"text": "≡",
+			"text_basic": "Start"
+		},
+
+		"_comment": "More generic letter buttons",
+		"Z": {
+			"shape": "circle",
+			"text": "Z"
+		},
+		"C": {
+			"shape": "circle",
+			"text": "C"
 		},
 
 		"_comment": "PlayStation naming of the sticks/shoulders",
@@ -151,6 +173,25 @@
 			"shape": "circle",
 			"icon": "plus",
 			"text": "+"
+		},
+
+		"_comment": "Saturn stuff",
+		"saturn_L": {
+			"shape": "bumper_left",
+			"icon": "skip_prev",
+			"text": "⏮",
+			"text_basic": "L"
+		},
+		"saturn_R": {
+			"shape": "bumper_right",
+			"icon": "skip_next",
+			"text": "⏭",
+			"text_basic": "R"
+		},
+		"saturn_start": {
+			"shape": "pill",
+			"shape_is_button": true,
+			"text": "Start"
 		},
 
 		"_comment": "Iconographic buttons seen on some generic controllers",
