@@ -15,12 +15,20 @@
 		table {
 			border-spacing: 0;
 			border: 1px #000 solid;
+			background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAIAQMAAAD+wSzIAAAABlBMVEVmZmaZmZmoZ+Z2AAAAD0lEQVQIW2PkZ4TADxAIABIoBAXF3RsYAAAAAElFTkSuQmCC');
+			background-size: 16px 16px;
+			image-rendering: -moz-crisp-edges;
+			image-rendering: crisp-edges;
+			image-rendering: pixelated;
 		}
 		td, th {
 			text-align: center;
 			padding: 4px;
 			border: none;
 			border-right: 1px #000A solid;
+		}
+		td:first-child, th {
+			background: #FFF8;
 		}
 		td:last-child, th:last-child {
 			border-right: none;
@@ -68,10 +76,30 @@
 			width: 45px;
 		}
 		tbody tr:nth-child(2n) {
-			background: #0001;
+			background: #FFF3;
 		}
 		thead tr {
-			background: #0132;
+			background: #0136;
+		}
+		.swatch {
+			display: inline-block;
+			width: 18px;
+			height: 18px;
+			margin-right: 4px;
+			vertical-align: middle;
+		}
+		.swatch.fg {
+			background: var(--fg);
+		}
+		.swatch.bg {
+			background: var(--bg);
+		}
+		.color-code {
+			font-family: monospace;
+			background: #FFFA;
+			font-weight: bold;
+			padding: 4px;
+			vertical-align: middle;
 		}
 		{{#colors}}
 		.bg-{{name}} {
@@ -115,6 +143,7 @@
 	</p>
 	<a href="https://github.com/unascribed/SymbolicControllerDB">More info and contributing</a>
 	<hr>
+	<h2>Currently defined controllers</h2>
 	<table>
 		<thead>
 		<tr>
@@ -171,5 +200,43 @@
 		{{/controllers}}
 		</tbody>
 	</table>
+	<h2>Default colors</h2>
+	<table>
+		<thead>
+		<tr>
+			<th>Name</th>
+			<th>Background</th>
+			<th>Foreground</th>
+		</tr>
+		</thead>
+		<tbody>
+		{{#colors}}
+		<tr>
+			<td>{{name}}</td>
+			<td class="bg-{{name}}"><div class="swatch bg"></div> <span class="color-code">#{{bg}}</span></td>
+			<td class="fg-{{name}}"><div class="swatch fg"></div> <span class="color-code">#{{fg}}</span></td>
+		</tr>
+		{{/colors}}
+		</tbody>
+	</table>
+	<h2>Currently defined shapes and icons</h2>
+	<table>
+		<thead>
+		<tr>
+			<th>Name</th>
+			<th>Suggested<br>Appearance</th>
+		</tr>
+		</thead>
+		<tbody>
+		{{#shapes}}
+		<tr>
+			<td>{{this}}</td>
+			<td><div class="button bg-white fg-white"><div class="shape icon-{{this}}"></div></div></td>
+		</tr>
+		{{/shapes}}
+		</tbody>
+	</table>
+	<hr>
+	Icons by <img style="width: 24px; height: 24px; vertical-align: middle" src="https://cdn.jsdelivr.net/npm/@mdi/svg@7.0.96/svg/vector-square.svg"> <a href="https://materialdesignicons.com">Material Design Icons</a>
 </body>
 </html>

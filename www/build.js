@@ -16,6 +16,12 @@ function resolve(buttons) {
 	return out;
 }
 
+function distinct(arr) {
+	let s = new Set();
+	arr.forEach(e => s.add(e));
+	return [...s];
+}
+
 let ctx = {
 	controllers: [],
 	icons: Object.entries({
@@ -62,7 +68,11 @@ let ctx = {
 		pill: "mdi/ellipse.svg",
 		menu: "mdi/menu.svg",
 		view: "view.svg",
-	}).map(([k, v]) => ({symbol:k,icon:v.replace("mdi/", "https://cdn.jsdelivr.net/npm/@mdi/svg@7.0.96/svg/")}))
+	}).map(([k, v]) => ({symbol:k,icon:v.replace("mdi/", "https://cdn.jsdelivr.net/npm/@mdi/svg@7.0.96/svg/")})),
+	shapes: distinct([
+		...Object.values(data.symbols.buttons).map(v => v.shape),
+		...Object.values(data.symbols.buttons).map(v => v.icon)
+	]).filter(v => v != null).sort()
 };
 data.controllers.forEach((ctrl) => {
 	ctx.controllers.push({
