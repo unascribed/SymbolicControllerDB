@@ -169,6 +169,52 @@
 			"text_basic": "Options"
 		},
 
+		"_comment": "Original Xbox (Xbox Zero, xb0, because Microsoft reused 'Xbox One')",
+		"xb0_A": {
+			"shape": "bean_left",
+			"text": "A"
+		},
+		"xb0_B": {
+			"shape": "bean_left",
+			"text": "B"
+		},
+		"xb0_X": {
+			"shape": "bean_left",
+			"text": "X"
+		},
+		"xb0_Y": {
+			"shape": "bean_left",
+			"text": "Y"
+		},
+		"xb0_black": {
+			"shape": "bean_left",
+			"shape_is_button": true,
+			"text": "Black"
+		},
+		"xb0_white": {
+			"shape": "bean_left",
+			"shape_is_button": true,
+			"text": "White"
+		},
+		"xb0_jewel": {
+			"shape": "circle",
+			"icon": "xbox_original",
+			"text": "Xbox"
+		},
+		"_comment": "Pill-shaped Xbox One view/menu buttons seen on the Hyperkin Duke original Xbox controller remake",
+		"xb0_view": {
+			"shape": "pill",
+			"icon": "view",
+			"text": "⧉",
+			"text_basic": "View"
+		},
+		"xb0_menu": {
+			"shape": "pill",
+			"icon": "menu",
+			"text": "≡",
+			"text_basic": "Menu"
+		},
+
 		"_comment": "Nintendo naming of the sticks/shoulders",
 		"nx_LS": {
 			"shape": "stick_down",
