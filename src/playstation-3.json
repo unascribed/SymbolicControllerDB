@@ -9,6 +9,11 @@
 	],
 	"bg": "black",
 	"fg": "white",
+	"conventions": {
+		"_comment": "This is swapped in Japan for the PS3 (they unified for PS4+) - games that use the DB should probably offer a 'Swap Accept/Back' option",
+		"accept": "a",
+		"back": "b"
+	},
 	"buttons": {
 		"a": {
 			"type": "cross",

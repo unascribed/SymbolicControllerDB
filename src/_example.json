@@ -13,6 +13,12 @@
 	"bg": "black",
 	"fg": "white",
 
+	"_comment": "This specifies the most commonly used accept and back/cancel buttons for this controller, using SDL names.",
+	"conventions": {
+		"accept": "a",
+		"back": "b"
+	},
+
 	"_comment": [
 		"Visual descriptions of the SDL buttons. Keys are the SDL button name.",
 		"Values can either be a string or an object. A string is equivalent to an object that only defines 'type'.",

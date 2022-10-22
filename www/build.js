@@ -87,6 +87,10 @@ let ctx = {
 data.controllers.forEach((ctrl) => {
 	ctx.controllers.push({
 		name: ctrl.name,
+		conventions: {
+			[ctrl.conventions.accept]: " convention-accept",
+			[ctrl.conventions.back]: " convention-back"
+		},
 		...resolve(ctrl.buttons)
 	});
 });

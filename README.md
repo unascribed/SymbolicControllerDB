@@ -56,6 +56,11 @@ controller with comments removed is offered. The structure is, roughly:
 				"01234567890123456789012345678901",
 				"12345678901234567890123456789012"
 			],
+			"conventions": {
+				// key is arbitrary, value is SDL name
+				"accept": "a",
+				"back": "b"
+			}
 			"buttons": {
 				// key is SDL name
 				"a": {

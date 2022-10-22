@@ -13,6 +13,10 @@
 	],
 	"bg": "black",
 	"fg": "white",
+	"conventions": {
+		"accept": "b",
+		"back": "a"
+	},
 	"buttons": {
 		"a": "B",
 		"b": "A",

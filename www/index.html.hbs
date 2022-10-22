@@ -141,6 +141,16 @@
 		.icon-home, .icon-skip_prev, .icon-skip_next, .icon-view, .icon-menu {
 			transform: scale(0.75);
 		}
+
+		.button-mapping {
+			border-bottom: 2px transparent solid;
+		}
+		.convention-accept {
+			border-bottom: 2px #5F5 solid;
+		}
+		.convention-back {
+			border-bottom: 2px #F55 solid;
+		}
 	</style>
 </head>
 <body>
@@ -168,6 +178,8 @@
 	<a href="https://github.com/unascribed/SymbolicControllerDB">More info and contributing</a>
 	<hr>
 	<h2>Currently defined controllers</h2>
+	Buttons with a green underline are the conventional "accept" button. Buttons with a red underline
+	are the conventional "back" or "cancel" button.
 	<table>
 		<thead>
 		<tr>
@@ -203,23 +215,23 @@
 		{{#controllers}}
 		<tr>
 			<td>{{name}}</td>
-			<td class="constrain">{{{a}}}</td>
-			<td class="constrain">{{{b}}}</td>
-			<td class="constrain">{{{x}}}</td>
-			<td class="constrain">{{{y}}}</td>
-			<td class="constrain">{{{leftshoulder}}}</td>
-			<td class="constrain">{{{rightshoulder}}}</td>
-			<td class="constrain">{{{lefttrigger}}}</td>
-			<td class="constrain">{{{righttrigger}}}</td>
-			<td class="constrain">{{{dpup}}}</td>
-			<td class="constrain">{{{dpdown}}}</td>
-			<td class="constrain">{{{dpleft}}}</td>
-			<td class="constrain">{{{dpright}}}</td>
-			<td class="constrain">{{{leftstick}}}</td>
-			<td class="constrain">{{{rightstick}}}</td>
-			<td class="constrain">{{{back}}}</td>
-			<td class="constrain">{{{guide}}}</td>
-			<td class="constrain">{{{start}}}</td>
+			<td class="constrain button-mapping {{conventions.a}}">{{{a}}}</td>
+			<td class="constrain button-mapping {{conventions.b}}">{{{b}}}</td>
+			<td class="constrain button-mapping {{conventions.x}}">{{{x}}}</td>
+			<td class="constrain button-mapping {{conventions.y}}">{{{y}}}</td>
+			<td class="constrain button-mapping {{conventions.leftshoulder}}">{{{leftshoulder}}}</td>
+			<td class="constrain button-mapping {{conventions.rightshoulder}}">{{{rightshoulder}}}</td>
+			<td class="constrain button-mapping {{conventions.lefttrigger}}">{{{lefttrigger}}}</td>
+			<td class="constrain button-mapping {{conventions.righttrigger}}">{{{righttrigger}}}</td>
+			<td class="constrain button-mapping {{conventions.dpup}}">{{{dpup}}}</td>
+			<td class="constrain button-mapping {{conventions.dpdown}}">{{{dpdown}}}</td>
+			<td class="constrain button-mapping {{conventions.dpleft}}">{{{dpleft}}}</td>
+			<td class="constrain button-mapping {{conventions.dpright}}">{{{dpright}}}</td>
+			<td class="constrain button-mapping {{conventions.leftstick}}">{{{leftstick}}}</td>
+			<td class="constrain button-mapping {{conventions.rightstick}}">{{{rightstick}}}</td>
+			<td class="constrain button-mapping {{conventions.back}}">{{{back}}}</td>
+			<td class="constrain button-mapping {{conventions.guide}}">{{{guide}}}</td>
+			<td class="constrain button-mapping {{conventions.start}}">{{{start}}}</td>
 		</tr>
 		{{/controllers}}
 		</tbody>

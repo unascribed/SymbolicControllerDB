@@ -25,6 +25,10 @@
 	],
 	"bg": "gray",
 	"fg": "white",
+	"conventions": {
+		"accept": "a",
+		"back": "x"
+	},
 	"buttons": {
 		"a": {
 			"type": "A",

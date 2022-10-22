@@ -5,6 +5,11 @@
 	"bg": "gray",
 	"fg": "white",
 
+	"conventions": {
+		"accept": "a",
+		"back": "b"
+	},
+
 	"buttons": {
 		"a": {
 			"type": "A",
