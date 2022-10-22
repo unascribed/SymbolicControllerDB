@@ -60,7 +60,7 @@ controller with comments removed is offered. The structure is, roughly:
 				// key is arbitrary, value is SDL name
 				"accept": "a",
 				"back": "b"
-			}
+			},
 			"buttons": {
 				// key is SDL name
 				"a": {
